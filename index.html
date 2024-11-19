@@ -18,6 +18,7 @@
   </head>
   <body>
     <div class="home">
+      <!-- Navbar Section -->
       <div class="nav">
         <div class="icons1">
           <div class="ham same" onclick="toggleMenu()">
@@ -37,6 +38,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Hero Section -->
       <div class="hero">
         <img src="./Assets/banner-img (1).jpg" alt="hero img" id="heroImage" />
         <video
@@ -52,9 +55,41 @@
           <div class="rc">Request a Callback</div>
           <div class="En">Enroll Now</div>
         </div>
+
+        <!-- Down Section Positioned at the Bottom -->
+        <div class="down">
+          <div class="annou">
+            <h2>ANNOUNCEMENT</h2>
+            <div class="speak">
+              <span class="material-symbols-outlined"> campaign </span>
+            </div>
+            <p>
+              Admissions are open <br />
+              for the academic year 2021-2022
+            </p>
+          </div>
+          <div class="video">
+            <div class="left">
+              <span class="material-symbols-outlined arrow_back_ios">
+                arrow_back_ios
+              </span>
+            </div>
+            <div class="right">
+              <span class="material-symbols-outlined arrow_forward_ios">
+                arrow_forward_ios
+              </span>
+            </div>
+          </div>
+          <div class="last">
+            <p>
+              Empowering students<br />to create solutions<br />
+              for tomorrow's challenges
+            </p>
+          </div>
+        </div>
       </div>
 
-      <!-- Hidden menu -->
+      <!-- Hidden Menu -->
       <div class="links" id="menu">
         <div class="close-btn">
           <span class="material-symbols-outlined" onclick="closeMenu()"
@@ -70,39 +105,9 @@
           <li>Occasions</li>
         </ul>
       </div>
-
-      <div class="down">
-        <div class="annou">
-          <h2>ANNOUNCEMENT</h2>
-          <div class="speak">
-            <span class="material-symbols-outlined"> campaign </span>
-          </div>
-          <p>
-            Admissions are open <br />
-            for the academic year 2021-2022
-          </p>
-        </div>
-        <div class="video">
-          <div class="left">
-            <span class="material-symbols-outlined arrow_back_ios">
-              arrow_back_ios
-            </span>
-          </div>
-          <div class="right">
-            <span class="material-symbols-outlined arrow_forward_ios">
-              arrow_forward_ios
-            </span>
-          </div>
-        </div>
-        <div class="last">
-          <p>
-            Empowering student<br />to create solutions<br />
-            for tomorrow's challenges
-          </p>
-        </div>
-      </div>
     </div>
 
+    <!-- Insights Section -->
     <div class="insight">
       <div class="text">
         <h3>INSIGHTS</h3>
@@ -110,41 +115,218 @@
         <p class="para">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, odit
           repellendus totam dignissimos voluptatum quaerat porro corporis
-          <br />provident,animi nihil fuga inventore amet minus nobis vitae sed
+          <br />provident, animi nihil fuga inventore amet minus nobis vitae sed
           est.
         </p>
       </div>
-      <div class="in-image">
-        <img src="./Assets/Insights.jpg" alt="Insights Image" />
-        <p class="view">View Service Offered</p>
+      <div class="carousel-container">
+        <div class="carousel">
+          <img src="./Assets/Insights.jpg" alt="Insight Image 1" />
+          <img src="./Assets/Insights.jpg" alt="Insight Image 2" />
+          <img src="./Assets/Insights.jpg" alt="Insight Image 3" />
+        </div>
+        <div class="controls">
+          <span class="material-symbols-outlined arrow_back" onclick="prevSlide()">arrow_back</span>
+          <span class="material-symbols-outlined arrow_forward" onclick="nextSlide()">arrow_forward</span>
+        </div>
+      </div>
+      <div class="dot">
+        <img src="./Assets/dot.svg" alt="" />
       </div>
       <div class="in-down">
         <div class="silde">
-          <p>1 of 7</p>
-          <span class="material-symbols-outlined"> arrow_back </span>
-          <span class="material-symbols-outlined"> arrow_forward </span>
+          <p id="slide-number">1 of 7</p>
         </div>
-        <p class="in-para">We track your vessels to deliver<br>
-        at earlier port of call</p>
+        <p class="in-para">
+          We track your vessels to deliver<br />
+          at earlier port of call
+        </p>
         <div class="in-btn">Visit The Page</div>
       </div>
     </div>
 
+    <!-- Network Section -->
     <div class="network">
-        <div class="net-text">
-            <h3>NETWORK</h3>
-            <p class="net-heading">SHM Network<span> Capability</span></p>
-            <p class="net-para">
-            Our extensive network of delivery centers across multiple locations. ensure fast<br> and effective service.
-            </p>
+      <div class="net-text">
+        <h3>NETWORK</h3>
+        <p class="net-heading">SHM Network<span> Capability</span></p>
+        <p class="net-para">
+          Our extensive network of delivery centers across multiple locations
+          ensures fast and effective service.
+        </p>
+      </div>
+    
+      <div class="net-image">
+        <img src="Assets/F97E3234.png" alt="Network Image" />
+    
+        <!-- Dots with overlays -->
+        <div class="net-dot">
+          <div class="dot dot1" data-dot="1">
+            <span class="material-symbols-outlined">adjust</span>
+            <div class="dot-over">
+              <h4>SHM Shipcare</h4>
+              <p>Lorem ipsum dolor sit amet.<br />Consectetur adipisicing elit.</p>
+              <h3>View Map</h3>
+            </div>
+          </div>
+          <div class="dot dot2" data-dot="2">
+            <span class="material-symbols-outlined">adjust</span>
+            <div class="dot-over">
+              <h4>Another Location</h4>
+              <p>Additional details can be shown here.</p>
+              <h3>View Map</h3>
+            </div>
+          </div>
+          <div class="dot" data-dot="3">
+            <span class="material-symbols-outlined">adjust</span>
+            <div class="dot-over">
+              <h4>Another Location</h4>
+              <p>Additional details can be shown here.</p>
+              <h3>View Map</h3>
+            </div>
+          </div>
+          <div class="dot dot4" data-dot="4">
+            <span class="material-symbols-outlined">adjust</span>
+            <div class="dot-over">
+              <h4>Another Location</h4>
+              <p>Additional details can be shown here.</p>
+              <h3>View Map</h3>
+            </div>
+          </div>
+          <div class="dot dot5" data-dot="5">
+            <span class="material-symbols-outlined">adjust</span>
+            <div class="dot-over">
+              <h4>Another Location</h4>
+              <p>Additional details can be shown here.</p>
+              <h3>View Map</h3>
+            </div>
+          </div>
+          <div class="dot dot6" data-dot="6">
+            <span class="material-symbols-outlined">adjust</span>
+            <div class="dot-over">
+              <h4>Another Location</h4>
+              <p>Additional details can be shown here.</p>
+              <h3>View Map</h3>
+            </div>
+          </div>
+          <div class="dot dot7" data-dot="7">
+            <span class="material-symbols-outlined">adjust</span>
+            <div class="dot-over">
+              <h4>Another Location</h4>
+              <p>Additional details can be shown here.</p>
+              <h3>View Map</h3>
+            </div>
+          </div>
         </div>
-        <div class="net-image">
-            <img src="Assets/F97E3234.png" alt="NetWork Image" />
+      </div>
+    
+      <div class="net-down">
+        <div class="net-text-down">
+          Get Your Products Delivered in<br />
+          <span>Your Preferred City or The Next Port of Call</span>
         </div>
+        <div class="net-btn">
+          Contact Us
+          <span class="material-symbols-outlined">call</span>
+        </div>
+      </div>
     </div>
+    
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo-section">
+          <img src="./Assets/logo.svg" alt="SHM Store" class="logo" />
+          <p class="logo-text">
+            We give you complete control of your shipments. Delivered on time
+            with no hassle.
+          </p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook"><img src="./Assets/facebook.png" alt=""></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><img src="./Assets/twitter.png" alt=""></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><img src="./Assets/linkedin.png" alt=""></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><img src="./Assets/youtube.png" alt=""></a>
+          </div>
+        </div>
 
-    <div class="footer"></div>
+        <div class="footer-column">
+          <h3>Usefull links</h3>
+          <nav>
+            <a href="#">Blog</a>
+            <a href="#">SHM Store</a>
+            <a href="#">Register</a>
+          </nav>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <nav>
+            <a href="#">SHM Group</a>
+            <a href="#">SHM Fire Safety</a>
+            <a href="#">SHM Shipcare</a>
+            <a href="#">SHM Products</a>
+          </nav>
+        </div>
 
+        <div class="footer-column">
+          <h3>Company</h3>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <a href="tel:+91-222-378-6400">+91-222-378-6400</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <a href="mailto:info@theshmstore.com">info@theshmstore.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <address style="font-style: normal">
+              Head office BPT. Plot no. 51B, magazine street, darukhana,
+              mazagaon, Mumbai 400010
+            </address>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <div class="footer-content">
+            <div class="questions-section">
+              <h2>Have Questions?</h2>
+              <p>Ask Our 24/7 Customer Support Executive</p>
+              <a href="tel:+911800-3002-7286" class="phone-number"
+                >Call Us : +91 1800-3002-7286</a
+              >
+            </div>
+            <div class="newsletter-section">
+              <h3>Subscribe to our newsletter</h3>
+              <form class="newsletter-form">
+                <input
+                  type="email"
+                  placeholder="Enter Email"
+                  class="newsletter-input"
+                  required
+                />
+                <button type="submit" class="subscribe-button">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-bottom-bar">
+            <div class="copyright">
+              © 2022 SHM Shipcare. All Rights Reserved. ISO 9001:2008 Certified.
+              Designed by ideamagix
+            </div>
+            <div class="footer-bottom-links">
+              <a href="#">Privacy</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Site Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
